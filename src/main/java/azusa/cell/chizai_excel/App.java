@@ -66,6 +66,14 @@ public class App {
 			cell = row.createCell(1);
 			cell.setCellValue("受取日");
 
+//			row = sheet.createRow(3);
+			cell = row.createCell(2);
+			cell.setCellValue("品目");
+
+			//row = sheet.createRow(3);
+			cell = row.createCell(3);
+			cell.setCellValue("個数");
+
 			// 「計算結果」のセルスタイル設定
 			create(workBook, 25);
 			// セルに「表のヘッダ」を設定
@@ -73,7 +81,7 @@ public class App {
 			// エクセルファイルを出力
 			try {
 				// ファイルパス・ファイル名の指定
-				outPutFilePath = "C:\\Users\\komatsu\\Desktop\\";
+				outPutFilePath = "C:\\Users\\akihiro.komatsu\\Desktop\\";
 				outPutFileName = "test.xlsx";
 
 				// エクセルファイルを出力
